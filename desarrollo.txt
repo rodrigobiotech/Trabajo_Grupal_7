@@ -1,0 +1,20 @@
+// Iniciar git 
+
+git init
+
+// Agregar todos los archivos copiados
+
+git add .
+
+// Hacer commit
+
+git commit -m "Todos los archivos subidos"
+
+// Check de status
+
+git status
+
+		RESULTADO:
+
+On branch master
+nothing to commit, working tree clean
