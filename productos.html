@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fenix</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/images/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/estilos/estilos.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Fenix</h1>
+        <h2>Venta de productos de línea blanca</h2>
+
+        <!-- seccion navbar -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Fenix</a>
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="/landing.html">Inicio</a>
+                        <a class="nav-link" href="/productos.html">Productos</a>
+                        <a class="nav-link" href="/comoComprar.html">Cómo comprar</a>
+                        <a class="nav-link" href="/pagosTransferencia.html">Pagos y Transferencias</a>
+                        <a class="nav-link" href="/marcas.html">Marcas</a>
+                        <a class="nav-link" href="/contacto.html">Contacto</a>
+                        <button id="btnCarrito" type="button" class=" h1 btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modal2">Carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="logo-slogan">
+            <div class="contenedor-img">
+                <img src="/images/logo.png" alt="Logo de Fenix" />
+            </div>
+            <p>Un mundo de soluciones</p>
+        </div>
+
+
+    </header>
+    <!-- <nav>
+        <ul>
+            <li>
+                <a href="/landing.html">Inicio</a>
+            </li>
+            <li>
+                <a href="/productos.html">Productos</a>
+            </li>
+            <li>
+                <a href="/comoComprar.html">Cómo Comprar</a>
+            </li>
+            <li>
+                <a href="/pagosTransferencia.html">Pagos y trasferencias</a>
+            </li>
+            <li>
+                <a href="/marcas.html">Marcas que distribuimos</a>
+            </li>
+            <li>
+                <a href="/contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav> -->
+
+
+    <main>
+
+
+
+        <h1> Nuestros productos </h1>
+        <details>
+            <summary id="summaryCarrito">Carrito</summary>
+            <div id="card-carrito" class="card text-white bg-secondary mb-3" >
+                <div class="card-header">Total</div>
+                <div id="producto" class="card-body ">
+                  
+                </div>
+                
+                <div id="btnPagar" class="card-body ">
+                    <a class="btn btn-primary " href="/formularioPago.html" role="button">Pagar</a>
+                </div>
+            </div>
+
+        </details>
+
+        <div class="tabla-productos">
+            <div>
+                <a href="/productos/producto1.html"><img id="r1" class="foto2"
+                        src="https://www.paris.cl/dw/image/v2/BCHW_PRD/on/demandware.static/-/Sites-cencosud-master-catalog/default/dwdc13ca98/images/imagenes-productos/701/152251-0000-001.jpg?sw=513&sh=654&sm=fit"></a>
+                <p>Código: 1</p>
+                <p>Nombre: Refrigerador1</p>
+                <p>Descripción: Un refrigerador</p>
+                <p>Precio: $300.000</p>
+                <div class="botonesProductos d-flex justify-content-center">
+                    <button  onclick="agregar_producto('valor_input1', '1', '300000' )">+</button>
+                    <input  id="valor_input1" type="number" value="0">
+                    <button  onclick="restar_producto('valor_input1', '1', '300000')">-</button>
+                </div>
+
+                
+            </div>
+
+            <div>
+                <a href="/productos/producto2.html"><img class="foto2"
+                        src="https://credimport.net/wp-content/uploads/2020/11/WSZ57L18DM-WSR57R18DM.jpg"></a>
+                <p>Código: 2</p>
+                <p>Nombre: Refrigerador2</p>
+                <p>Descripción: Un refrigerador</p>
+                <p>Precio: $200.000</p>
+                <div class="botonesProductos d-flex justify-content-center">
+
+                <button onclick="agregar_producto('valor_input2', '2', '200000')" class="display-box">+</button>
+                <input id="valor_input2" type="number" value="0">
+                <button onclick="restar_producto('valor_input2', '2', '200000')">-</button>
+            </div>
+        </div>
+            <div>
+                <a href="/productos/producto3.html"><img class="foto2"
+                        src="https://www.paris.cl/dw/image/v2/BCHW_PRD/on/demandware.static/-/Sites-cencosud-master-catalog/default/dw8b1a77ef/images/imagenes-productos/701/109609-0000-001.jpg?sw=513&sh=654&sm=fit"></a>
+                <p>Código: 3</p>
+                <p>Nombre: Refrigerador3</p>
+                <p>Descripción: Un refrigerador</p>
+                <p>Precio: $800.000</p>
+                <div class="botonesProductos d-flex justify-content-center">
+
+                <button onclick="agregar_producto('valor_input3', '3', '800000')">+</button>
+                <input id="valor_input3" type="number" value="0">
+                <button onclick="restar_producto('valor_input3' , '3', '800000')">-</button>
+            </div>
+        </div>
+            <div>
+                <a href="/productos/producto4.html"><img class="foto2"
+                        src="https://easycl.vtexassets.com/arquivos/ids/658860-800-auto?ight=auto&aspect=true"></a>
+                <p>Código: 4</p>
+                <p>Nombre: Refrigerador4</p>
+                <p>Descripción: Un refrigerador</p>
+                <p>Precio: $100.000</p>
+                <div class="botonesProductos d-flex justify-content-center">
+
+                <button onclick="agregar_producto('valor_input4', '4', '100000')">+</button>
+                <input id="valor_input4" type="number" value="0">
+                <button onclick="restar_producto('valor_input4', '4', '100000')">-</button>
+            </div>
+        </div>
+        </div>
+
+       
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"
+                        alt="Logo de Instagram"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/"><img
+                        src="http://1000logos.net/wp-content/uploads/2017/06/Twitter-Logo.png"
+                        alt="Logo de Twitter"></a>
+            </li>
+        </ul>
+        <p>Copyright &copy; 2023 -
+            Desarrollo de Landing Pages Inc.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <script src="/js/logica.js"></script>
+</body>
+
+</html>

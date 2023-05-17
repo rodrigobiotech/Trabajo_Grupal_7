@@ -1,0 +1,177 @@
+
+#totalCompra{
+    background-color: grey;
+    font-size: 1.5rem;
+    border: solid black ;
+}
+
+#btnPagar{
+    width: 10px;
+}
+.botonesProductos input{
+    margin-bottom: 0px;
+}
+
+.botonesProductos button{
+    margin: 0px 5px;
+}
+
+
+header, nav, footer, main{
+    text-align: center;
+}
+li{
+    list-style: none;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+article p{
+    text-align: justify;
+}
+
+.contenedor-img img{
+    width: 20%;
+}
+
+/* nav */
+nav{
+    margin: 25px;
+}
+/* logo y slogan */
+.logo-slogan{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px;
+
+}
+
+/* imagen y formulario */
+.img-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin: 20px;
+
+}
+label, button{
+    display: block;
+    margin: 5px 15px;
+} 
+
+input{
+    margin-bottom: 15px;
+}
+#formulario-beneficios{
+    border: solid rgb(119, 107, 107) 0.5px;
+}
+
+#formulario-beneficios h3{
+    text-align: left;
+    
+}
+/* footer */
+footer a img{
+    width: 3%;
+}
+
+/* grid comprar-transf-contacto */
+.comprar-transf-contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+/* grid para logos de marcas */
+.marcas-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+/* grid para tabla de pagina de productos */
+.tabla-productos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+    text-align: center;
+    gap: 40px;
+    
+}
+
+.tabla-productos img{
+    width: 20%;
+    height: 30%;
+}
+
+/* grid para tabla de pagina de cada producto */
+.tabla-producto{
+    display: grid;
+    grid-template-columns: repeat(5,1fr) ;
+    text-align: center;
+    gap: 40px;
+    
+}
+
+.tabla-producto img{
+    width: 20%;
+    height: 30%;
+}
+
+
+    
+@media screen and (max-width: 768px) {
+    .logo-slogan{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .img-form{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+
+    }
+    footer a {
+        display: block;
+        
+    }
+    li {
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /* grid comprar-transf-contacto */
+.comprar-transf-contacto{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+/* grid para logos de marcas */
+.marcas-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+.tabla-productos{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px
+}
+.tabla-productos img{
+    width: 20%;
+    height: auto;
+}
+.tabla-producto{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px
+}
+.tabla-producto img{
+    width: 20%;
+    height: auto;
+} 
+
+    
+
+
+
