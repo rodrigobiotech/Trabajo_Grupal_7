@@ -18,3 +18,31 @@ git status
 
 On branch master
 nothing to commit, working tree clean
+
+
+// Usuario github
+
+El usuario github creado es rodrigobiotech
+
+// Subir repositorio
+
+git remote add origin https://github.com/rodrigobiotech/Trabajo_Grupal_7.git
+git branch -M main
+git push -u origin main
+
+		RESULTADO:
+		
+Enumerating objects: 30, done.
+Counting objects: 100% (30/30), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (27/27), done.
+Writing objects: 100% (30/30), 13.60 KiB | 6.80 MiB/s, done.
+Total 30 (delta 11), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (11/11), done.
+To https://github.com/rodrigobiotech/Trabajo_Grupal_7.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+// Dar acceso
+
+se dio acceso a naty.ponce5@gmail.com
