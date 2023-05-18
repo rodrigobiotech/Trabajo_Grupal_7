@@ -19,6 +19,7 @@ git status
 On branch master
 nothing to commit, working tree clean
 
+<<<<<<< HEAD
 
 // Usuario github
 
@@ -46,3 +47,6 @@ branch 'main' set up to track 'origin/main'.
 // Dar acceso
 
 se dio acceso a naty.ponce5@gmail.com
+=======
+Cambio- 17-05-2023
+>>>>>>> 9f62c99bc7f6e6b5adb32684a708996217ddd5b4
